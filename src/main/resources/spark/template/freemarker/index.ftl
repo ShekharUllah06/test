@@ -7,7 +7,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body data-target="#myModal">
 
 <div class="jumbotron text-center">
   <div class="container">
