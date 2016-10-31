@@ -4,14 +4,14 @@
   <#include "header.ftl">
 <script>
 // When the user clicks on <div>, open the popup
-//function myFunction() {
+function myFunction() {
     var popup = document.getElementById('myPopup');
     popup.classList.toggle('show');
-//}
+}
 </script>
 </head>
 
-<body>
+<body onload="myFunction()">
 
 <div class="jumbotron text-center">
   <div class="container">
@@ -20,7 +20,7 @@
     </a>
     <h1>Geofence Demo</h1><br/>
   </div>
-<div class="popup">Click me!
+<div class="popup" onclick="myFunction()">Click me!
   <span class="popuptext" id="myPopup">Popup text...</span>
 </div>
 </div>
