@@ -15,9 +15,7 @@
     <body>
         <div class="jumbotron text-center">
             <div class="container">
-                <a href="/" class="lang-logo">
-                    <img src="/lang-logo.png">
-                </a>
+                
                 <h1>Geofence Demo</h1>
             </div>
         </div>
@@ -38,12 +36,7 @@
                 </div>
             </div>
         </div>
-        <!-- 
-                <p>Click the button to get your coordinates.</p>
-        
-                
-                <button onclick="getLocation()">Try It</button>
-        -->
+       
         <p id="demo"></p>
 
         <script>
@@ -59,7 +52,12 @@
             }
 
             function showPosition(position) {
-                distance = getDistanceFromLatLonInKm(36.8408722, -76.13120359999999, position.coords.latitude, position.coords.longitude);
+                //set your shop Latitude
+                var shopLatitude=28.04024;
+                //set your shop Longitude
+                var shopLongitude=-81.95454;
+                
+                distance = getDistanceFromLatLonInKm(shopLatitude, shopLongitude, position.coords.latitude, position.coords.longitude);
                 //x.innerHTML = "Latitude: " + position.coords.latitude +
                 //"<br>Longitude: " + position.coords.longitude + "<br>Distance: " + distance;
                 if (distance <= 5) {
